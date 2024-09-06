@@ -1,0 +1,105 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+#button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.number {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+  transform-origin: -50% -50% -50px;
+  position: relative !important;
+}
+.number.rotating {
+  transition: all 3s ease;
+}
+.number:nth-of-type(1) {
+  transform: translateX(-50%) rotate3d(1, 0, 0, 0deg);
+  background: red;
+}
+.number:nth-of-type(2) {
+  transform: translateX(-150%) rotate3d(1, 0, 0, 36deg);
+  background: orange;
+}
+.number:nth-of-type(3) {
+  transform: translateX(-250%) rotate3d(1, 0, 0, 72deg);
+  background: yellow;
+}
+.number:nth-of-type(4) {
+  transform: translateX(-350%) rotate3d(1, 0, 0, 108deg);
+  background: green;
+}
+.number:nth-of-type(5) {
+  transform: translateX(-450%) rotate3d(1, 0, 0, 144deg);
+  background: blue;
+}
+.number:nth-of-type(6) {
+  transform: translateX(-550%) rotate3d(1, 0, 0, 180deg);
+  background: indigo;
+}
+.number:nth-of-type(7) {
+  transform: translateX(-650%) rotate3d(1, 0, 0, 216deg);
+  background: violet;
+}
+.number:nth-of-type(8) {
+  transform: translateX(-750%) rotate3d(1, 0, 0, 252deg);
+  background: pink;
+}
+.number:nth-of-type(9) {
+  transform: translateX(-850%) rotate3d(1, 0, 0, 288deg);
+  background: teal;
+}
+.number:nth-of-type(10) {
+  transform: translateX(-950%) rotate3d(1, 0, 0, 324deg);
+  background: salmon;
+}
+
+.number:nth-of-type(1).rotating {
+  transform: translateX(-50%) rotate3d(1, 0, 0, 360deg);
+}
+.number:nth-of-type(2).rotating {
+  transform: translateX(-150%) rotate3d(1, 0, 0, 396deg);
+}
+.number:nth-of-type(3).rotating {
+  transform: translateX(-250%) rotate3d(1, 0, 0, 432deg);
+}
+.number:nth-of-type(4).rotating {
+  transform: translateX(-350%) rotate3d(1, 0, 0, 468deg);
+}
+.number:nth-of-type(5).rotating {
+  transform: translateX(-450%) rotate3d(1, 0, 0, 504deg);
+}
+.number:nth-of-type(6).rotating {
+  transform: translateX(-550%) rotate3d(1, 0, 0, 540deg);
+}
+.number:nth-of-type(7).rotating {
+  transform: translateX(-650%) rotate3d(1, 0, 0, 576deg);
+}
+.number:nth-of-type(8).rotating {
+  transform: translateX(-750%) rotate3d(1, 0, 0, 612deg);
+}
+.number:nth-of-type(9).rotating {
+  transform: translateX(-850%) rotate3d(1, 0, 0, 648deg);
+}
+.number:nth-of-type(10).rotating {
+  transform: translateX(-950%) rotate3d(1, 0, 0, 684deg);
+}
